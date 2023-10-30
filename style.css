@@ -1,0 +1,140 @@
+
+/* Custom variables */
+
+:root {
+    --clr--primary--red: hsl(0, 100%, 74%) ;
+    --clr--primary--green: hsl(154, 59%, 51%);
+    --clr--accent--blue: hsl(248, 32%, 49%);
+    --clr--dark--blue: hsl(249, 10%, 26%) ;
+    --clr--grayish--blue: hsl(246, 25%, 77%);
+    --clr--white: hsl(0, 0%, 100%);
+
+    --ff--poppins: 'Poppins', sans-serif;
+    --fw--400: 400;
+    --fw--500: 500;
+    --fw--600: 600;
+    --fw--700: 700;
+}
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+  
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+body {
+    background-color: var(--clr--primary--red);
+    background-image: url('images/bg-intro-mobile.png');
+    font-family: var(--ff--poppins);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--clr--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
+    max-width: 70rem;
+}
+
+@media (min-width: 50rem) {
+    main {
+        flex-direction: row;
+        padding: 2rem;
+    }
+}
+
+.intro {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+
+
+.incentive {
+    background-color: var(--clr--accent--blue);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.accent {
+    font-weight: var(--fw--600);
+}
+
+form {
+    background-color: var(--clr--white);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid var(--clr--grayish--blue);
+    padding: 1.2rem .8rem;
+    font-weight: var(--fw--600);
+    margin-bottom: 1rem;
+    color: var(--clr--dark--blue);
+}
+
+.submit-btn {
+    background-color: var(--clr--primary--green);
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.terms {
+    font-size: .8rem;
+    color: var(--clr--grayish--blue);
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.terms-accent {
+    color: var(--clr--primary--red);
+    font-weight: var(--fw--700);
+}
