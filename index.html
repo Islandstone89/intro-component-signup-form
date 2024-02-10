@@ -24,17 +24,54 @@
       <div class="signup">
         <p class="incentive"><span class="accent">Try it free 7 days</span> then $20/mo. thereafter</p>
 
-        <form action="">
-          <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
-          <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-          <input type="email" name="email" id="email" placeholder="Email Address">
-          <input type="password" name="password" id="password" placeholder="Password">
-          <input type="submit" value="Claim your free trial" class="submit-btn">
+        <form id="form">
 
-          <p class="terms">By clicking the button, you are agreeing to our <span class="terms-accent">Terms and Services</span></p>
+          <fieldset>
+            <legend class="visually-hidden">Signup Form</legend>
+          
+            <span class="visually-hidden">Enter your first name</span>
+
+            <div class="input-wrapper">
+              <input type="text" name="firstName" id="firstName" class="inputElement" placeholder="First Name" required>
+              <img src="images/icon-error.svg" alt="" class="error-icon error-icon1">
+              <p class="error error-firstname">First Name cannot be empty</p>
+            </div><!-- end input-wrapper -->
+
+            <span class="visually-hidden">Enter your last name</span>
+
+            <div class="input-wrapper">
+              <input type="text" name="lastName" id="lastName" class="inputElement" placeholder="Last Name" required>
+              <img src="images/icon-error.svg" alt="" class="error-icon error-icon2">
+              <p class="error error-lastname">Last Name cannot be empty</p>
+            </div><!-- end input-wrapper -->
+
+            <span class="visually-hidden">Enter your email address</span>
+
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" class="inputElement" placeholder="Email Address" required>
+              <img src="images/icon-error.svg" alt="" class="error-icon error-icon3">
+              <p class="error error-email"></p>
+            </div><!-- end input-wrapper -->
+
+            <span class="visually-hidden">Enter a password</span>
+
+            <div class="input-wrapper">
+              <input type="password" name="password" id="password" class="inputElement" placeholder="Password" required>
+              <img src="images/icon-error.svg" alt="" class="error-icon error-icon4">
+              <p class="error error-password">Password cannot be empty</p>
+            </div><!-- end input-wrapper -->
+
+            <button type="submit" class="submit-btn">Claim your free trial</button>
+
+            <p class="terms">By clicking the button, you are agreeing to our <span class="terms-accent">Terms and Services</span></p>
+
+          </fieldset>
         </form><!-- end form-->
       </div><!-- end signup -->
 
   </main><!-- end container -->
+
+  <script src="script.js"></script>
+  
 </body>
 </html>
